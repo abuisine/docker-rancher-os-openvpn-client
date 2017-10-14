@@ -8,6 +8,4 @@ COPY resources/socat.sh /usr/local/bin/socat.sh
 
 RUN chmod +x /usr/local/bin/socat.sh
 
-ENV SSH_HOST=172.17.0.1
-
 ENTRYPOINT [ "/usr/sbin/openvpn" ]
