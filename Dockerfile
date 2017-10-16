@@ -1,6 +1,6 @@
 FROM	kylemanna/openvpn
 LABEL	maintainer="Alexandre Buisine <alexandrejabuisine@gmail.com>"
-LABEL	version="1.0"
+LABEL	version="1.0.2"
 
 RUN apk add --no-cache socat
 
