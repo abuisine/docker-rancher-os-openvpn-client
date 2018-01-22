@@ -6,6 +6,6 @@ AUTH_FILE=/tmp/auth
 echo $HOSTNAME > $AUTH_FILE
 echo $PASSWORD >> $AUTH_FILE
 
-echo -e "${CA_CERT}" > /etc/ssl/certs/ca.crt
+wget -P /etc/ssl/certs/ "${CA_URL}"
 
 exec openvpn $@
